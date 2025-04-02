@@ -1,1 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>網頁貪食蛇</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>貪食蛇小遊戲</h1>
+    <div class="score-board">
+        分數: <span id="score">0</span>
+    </div>
+    <div class="canvas-container">
+        <canvas id="gameCanvas" width="600" height="400"></canvas>
+        <div id="gameOverScreen" class="game-over-screen">
+            <h2>遊戲結束！</h2>
+            <p>最終分數: <span id="finalScore">0</span></p>
+            <button id="restartButton">重新開始 (按 Enter)</button>
+            <p class="tip">(使用方向鍵控制)</p>
+        </div>
+    </div>
 
+    <script src="script.js"></script>
+</body>
+</html>
