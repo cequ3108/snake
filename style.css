@@ -1,0 +1,79 @@
+body {
+    display: flex;
+    flex-direction: column; /* 改為垂直排列 */
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+    font-family: 'Microsoft JhengHei', '微軟正黑體', sans-serif;
+    margin: 0;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 10px; /* 調整標題下方間距 */
+}
+
+.score-board {
+    font-size: 24px;
+    color: #555;
+    margin-bottom: 15px; /* 分數板下方間距 */
+}
+
+.canvas-container {
+    position: relative; /* 為了絕對定位遊戲結束畫面 */
+    border: 5px solid #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#gameCanvas {
+    display: block; /* 移除 canvas 下方的空隙 */
+    background-color: #000000; /* 畫布背景設為黑色 */
+}
+
+.game-over-screen {
+    position: absolute; /* 疊加在 canvas 上方 */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(50, 50, 50, 0.85); /* 半透明背景 */
+    color: white;
+    display: none; /* 預設隱藏 */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.game-over-screen h2 {
+    color: #ff6b6b; /* 紅色標題 */
+    margin-bottom: 15px;
+}
+
+.game-over-screen p {
+    margin: 10px 0;
+}
+
+.game-over-screen button {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #333;
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.2s ease;
+}
+
+.game-over-screen button:hover {
+    background-color: #ddd;
+}
+
+.game-over-screen .tip {
+    margin-top: 15px;
+    font-size: 0.9em;
+    color: #ccc;
+}
